@@ -5,13 +5,6 @@ terraform {
 
 }
 
-provider "aws" {
-  region = "${var.aws-region}"
-  access_key = "AKIA4QCSZ4BXFTTEWNZY"
-  secret_key = "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"
-
-}
-
 data "aws_availability_zones" "available" {}
 
 resource "aws_vpc" "myVPC" {
